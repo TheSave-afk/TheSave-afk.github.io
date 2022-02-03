@@ -13,91 +13,95 @@
 
      </head>
       
-<body>
-
-  <!-- Back to top button -->
-  <button
-  type="button"
-  class="btn btn-danger btn-floating btn-lg"
-  id="btn-back-to-top"
-  >
-  <i class="fas fa-arrow-up"></i>
-  </button>
-
-
-  <ul class="nav ">
+<body class="body">
+  <h1>Salvo Vultaggio</h1>
+  <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-      <a class="nav-link active" href="https://github.com/TheSave-afk?tab=repositories">Progetti</a>
+      <a class="nav-link active" href="#Formazione">Formazione</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="https://www.linkedin.com/in/salvo-vultaggio/">Linkedin</a>
+      <a class="nav-link" href="#Esperienza">Esperienze</a>
     </li>
-  </ul>
-
+    <li class="nav-item">
+      <a class="nav-link" href="#Interessi">Interessi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cv">Curriculum</a>
+    </li>
+</ul>
+<button type="button" onclick="window.location.href='https://github.com/TheSave-afk?tab=repositories'" class="btn btn-primary btn-cirn-xlcle bt" href="https://github.com/TheSave-afk?tab=repositories">Progetti</button>
+     <button type="button" onclick="window.location.href='https://www.linkedin.com/in/salvo-vultaggio/'"class="btn btn-secondary btn-circle btn-xl" href="https://www.linkedin.com/in/salvo-vultaggio/">Linkedin</button>
+<div class="container">
   <div class="jumbotron text-center">
-    <h1>Salvo Vultaggio</h1>
-      <p>Ingegnere informatico</p> 
-      <!-- <img class="rounded-circle z-depth-2" alt="100x100" src="img/fototessera.jpg" data-holder-rendered="true" > -->
-      <img src="img/fototessera.jpg" class="rounded-circle" alt="Me" width="250" height="300"> 
-      <button type="button" class="btn btn-primary btn-circle btn-xl" href="https://github.com/TheSave-afk?tab=repositories">Progetti</button>
-     <button type="button" class="btn btn-secondary btn-circle btn-xl" href="https://www.linkedin.com/in/salvo-vultaggio/">Linkedin</button>
+    <h1>Ingegnere informatico</h1> 
+    <img src="img/fototessera.jpg" class="rounded-circle" alt="Me" width="270" height="300" > 
   </div>
+</div>
 
-  <div class="container">
+  <div class="container" id = "Formazione">
     <div class="jumbotron text-center">
       <h1>Formazione</h1>
-      <h3>Laurea Magistrale in Ingegneria Informatica, Università degli studi di Parma. Voto di laurea 108/110</h3>
-      <h4>Tesi Sperimentale: Sviluppo di un sistema multipiattaforma per il riconoscimento di situazioni sospette durante esami da remoto tramite computer vision</h4>
-      <h3>Laurea Magistrale in Ingegneria Informatica,Elettronica e delle Telecomunicazioni Università degli studi di Parma. Voto di laurea 91/110</h3>
-      <h4>Tesi Sperimentale: Uso del Deep Learning per il riconoscimento di detriti sulle macchine della pulizia urbana</h4>
+      <img src="img/undraw_certificate_re_yadi.svg" class="rounded-circle" width="170" height="200"> 
+      <h4>Laurea Magistrale in Ingegneria Informatica, Università degli studi di Parma. Voto di laurea 108/110</h4>
+      <hr class="my-4">
+      <h4>Laurea Magistrale in Ingegneria Informatica,Elettronica e delle Telecomunicazioni Università degli studi di Parma. Voto di laurea 91/110</h4>
+      <hr class="my-4">
     </div>
   </div>
   
-  <div class="container">
+  <div class="container" id ="Esperienza">
     <div class="jumbotron text-center">
       <h1>Esperienza</h1>
-      <h3>Analyst presso Deloitte Risk Advisory - Ottobre 2021 - Attuale</h3>
-      <h4>Implementazione di progetti GRC in ambito IT su ServiceNow</h4>
-      <h3>Web Developer & Designer presso InteractiveMinds - Ottobre 2020 - Gennaio 2021</h3>
-      <h4>Sviluppo di nuovi siti web...</h4>
+      <img src="img/undraw_updated_resume_re_q1or.svg" class="rounded-circle" width="170" height="200" > 
+      <h4>Analyst presso Deloitte Risk Advisory - Ottobre 2021 - Attuale</h4>
+      <hr class="my-4">
+      <h4>Web Developer & Designer presso InteractiveMinds - Ottobre 2020 - Gennaio 2021</h4>
     </div>
   </div>
 
 <div class="container">
-  <div class="row">
+  <div class="jumbotron text-center">
+        <h3>Skills</h3>
+        <img src="img/undraw_programming_re_kg9v.svg" class="rounded-circle" width="170" height="200">
+        <p>Linguaggi di programmazione: Java, Python, JavaScript, C++, C,</p>
+        <p>Fraworks: Ionic</p>
+        <p>Web: HTML, CSS, JavaScript, PHP, JQuery</p>
+        <p>Database: SQL</p>
+        <p>Mobile: Android</p>
+  </div>
+</div>
 
-    <div class="col-sm-4">
-      <h3>Skills</h3>
-      <p>Linguaggi di programmazione: Java, Python, JavaScript, C++, C,</p>
-      <p>Fraworks: Ionic</p>
-      <p>Web: HTML, CSS, JavaScript, PHP, JQuery</p>
-      <p>Database: SQL</p>
-    </div>
-
-    <div class="col-sm-4">
+<div class="container">
+  <div class="jumbotron text-center">  
       <h3>Interessi</h3>
       <p>Sono uno sportivo, appassionato del triathlon </p>
       <p>Mi piace il mondo Android e della cibersecurity</p>
-    </div>
+  </div>
+</div>
 
-    <div class="col-sm-4">
-      <h3>Scarica il mio cv</h3>    
-       <!--<button type="submit" onclick="window.open('cv/cv_Salvo_Vultaggio.pdf')">Download!</button>-->
-       <button class="btn" id = "download"  type="submit" onclick="window.open('cv/cv_Salvo_Vultaggio.pdf')"><i class="fa fa-download" ></i> Download</button>
-    </div>
+<div class="container">
+  <div class="jumbotron text-center">  
+      <h3 id ="cv">Scarica il mio cv
+        <img onclick="window.open('cv/cv_Salvo_Vultaggio.pdf')" src="https://img.icons8.com/material-rounded/24/000000/download--v1.png"/>
+      </h3> 
   </div>
 </div>
 
   <!--footer-->
   <footer class="text-center text-white" style="background-color: #000000;">
-    
-    <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2021 Copyright:
       <a> Salvo Vultaggio</a>
     </div>
-    <!-- Copyright -->
-
   </footer>
+
+    <!-- Back to top button -->
+    <button
+    type="button"
+    class="btn btn-danger btn-floating btn-lg"
+    id="btn-back-to-top"
+    >
+    <i class="fas fa-arrow-up"></i>
+    </button>
 
   <!-- Custom scripts -->
   <script type="text/javascript" src="js/script.js"></script>
