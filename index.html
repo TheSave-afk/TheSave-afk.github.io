@@ -10,6 +10,8 @@
         
         <!-- Custom styles -->
         <link rel="stylesheet" href="css/style.css" />
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      </head>
       
@@ -32,8 +34,14 @@
   <div class="jumbotron text-center">
     <h1>Salvo Vultaggio</h1>
     <img src="img/fototessera.jpg" class="rounded-circle" alt="Me" width="270" height="300" > 
-    <h5>Ingegnere informatico</h5> 
-    <button type="button" onclick="window.location.href='https://github.com/TheSave-afk?tab=repositories'" class="btn" href="https://github.com/TheSave-afk?tab=repositories">Progetti</button>
+    <h5>Ingegnere informatico</h5>
+    <h5>Android Developer</h5>
+    <h5>Fullstack Developer</h5> 
+    <button type="button" id="progetti"
+    onclick="window.location.href='https://github.com/TheSave-afk?tab=repositories'" class="btn">
+    <i class="fa fa-folder"></i>
+    Progetti</button>
+    
   </div>
 </div>
 
@@ -60,20 +68,30 @@
 
 <div class="container">
   <div class="jumbotron text-center">
-        <h1>Skills</h1>
+        <div class="bouncing-text">
+          <div class="s">S</div>
+          <div class="k">k</div>
+          <div class="i">i</div>
+          <div class="l">l</div>
+          <div class="l">l</div>
+          <div class="s">s</div>
+          <div class="shadow"></div>
+          <div class="shadow-two"></div>
+        </div>
         <img src="img/undraw_programming_re_kg9v.svg" class="rounded-circle" width="170" height="200">
-        <h5>Linguaggi di programmazione: Java, Python, JavaScript, C++, C,</h5>
+        <h5>Linguaggi di programmazione: Java, Python, JavaScript, C++, C</h5>
         <h5>Fraworks: Ionic</h5>
         <h5>Web: HTML, CSS, JavaScript, PHP, JQuery, React.js</h5>
         <h5>Database: SQL</h5>
         <h5>Mobile: Android</h5>
   </div>
+
 </div>
 
 <div class="container">
   <div class="jumbotron text-center">  
       <h1>Interessi</h1>
-      <img src="img/photo_2022-02-03_19-50-53.jpg" class="rounded-circle" width="170" height="200">   
+      <img src="img/photo_2022-02-03_19-50-53.jpg" class="rounded-circle" width="220" height="250">   
       <h5>Sono uno sportivo, nonchè atleta amatoriale di triathlon </h5>
       <h5>Mi piace il mondo Android e della cibersecurity</h5>
   </div>
@@ -81,11 +99,18 @@
 
 <div class="container">
   <div class="jumbotron text-center">  
-      <h3 id ="cv">Scarica il mio cv
-        <img onclick="window.open('cv/cv_Salvo_Vultaggio.pdf')" src="https://img.icons8.com/material-rounded/24/000000/download--v1.png"/>
-      </h3> 
+      <h3 id ="cv">Scarica il mio cv</h3>
+      <button type="button" class="btn small" onclick="window.open('cv/cv_Salvo_Vultaggio.pdf')" id="download">
+        <i class="fa fa-download bounce" aria-hidden="true"></i>
+        <!-- <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></i>-->
+       </button>
   </div>
 </div>
+
+<!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fa fa-arrow-up" ></i>
+  </button>
 
   <!--footer-->
   <footer class="text-center text-white" style="background-color: #000000;">
@@ -93,15 +118,6 @@
       <a> Salvo Vultaggio</a>
     </div>
   </footer>
-
-    <!-- Back to top button -->
-    <button
-    type="button"
-    class="btn btn-danger btn-floating btn-lg"
-    id="btn-back-to-top"
-    >
-    <i class="fas fa-arrow-up"></i>
-    </button>
 
   <!-- Custom scripts -->
   <script type="text/javascript" src="js/script.js"></script>
